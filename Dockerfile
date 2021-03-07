@@ -84,7 +84,7 @@ RUN  curl -LsS "$( curl -LsS https://api.github.com/repos/mozilla/sops/releases/
     -o /usr/bin/sops ;\
   chmod +x /usr/bin/sops
 
-ARG AWS=no
+ARG AWS=yes
 ARG GCP=no
 ARG AZURE=no
 COPY fmt/format-hcl fmt/fmt.sh fmt/terragrunt-fmt.sh show-versions.sh /usr/bin/
@@ -116,7 +116,7 @@ RUN chmod +x \
 # And for https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions
 ARG NAME="IaaC dockerized framework for Terraform/Terragrunt"
 ARG DESCRIPTION="Docker image with Terraform v${TF_VERSION}, Terragrunt v${TG_VERSION} and all needed components to easily manage cloud infrastructure."
-ARG REPO_URL="https://github.com/devops-infra/docker-terragrunt"
+ARG REPO_URL="https://github.com/smb-projects/docker-terragrunt"
 ARG AUTHOR="Krzysztof Szyper <biotyk@mail.com>"
 ARG HOMEPAGE="https://christophshyper.github.io/"
 ARG BUILD_DATE=2020-04-01T00:00:00Z

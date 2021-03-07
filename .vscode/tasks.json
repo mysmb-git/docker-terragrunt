@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "make",
+			"script": "build",
+			"path": "",
+			"fileName": "Makefile",
+			"uri": {
+				"$mid": 1,
+				"fsPath": "c:\\UbuntuFocal\\docker-terragrunt\\Makefile",
+				"_sep": 1,
+				"path": "/c:/UbuntuFocal/docker-terragrunt/Makefile",
+				"scheme": "file"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"label": "make: build"
+		},
+		{
+			"type": "make",
+			"script": "build-plain",
+			"path": "",
+			"fileName": "Makefile",
+			"uri": {
+				"$mid": 1,
+				"fsPath": "c:\\UbuntuFocal\\docker-terragrunt\\Makefile",
+				"_sep": 1,
+				"path": "/c:/UbuntuFocal/docker-terragrunt/Makefile",
+				"scheme": "file"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"label": "make: build-plain"
+		}
+	]
+}

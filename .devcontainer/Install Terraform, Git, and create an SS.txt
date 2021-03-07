@@ -1,0 +1,22 @@
+Install Terraform, Git, and create an SSH key pair
+
+#############################
+##  Terraform + Git + SSH  ##
+#############################
+# Add terraform's apt key (enter previously created password at prompt)
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+ 
+# Add terraform's apt repository
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+ 
+# Install terraform and git
+sudo apt-get update && sudo apt-get -y install terraform git
+ 
+
+
+ 
+# Clone the cloud_workstation project
+git clone https://github.com/chadgeary/cloud_workstation
+
+# Create SSH key pair (RETURN for defaults)
+ssh-keygen
